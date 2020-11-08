@@ -1,0 +1,68 @@
+
+\documentclass{lrk-diss}
+
+
+\begin{filecontents*}[overwrite]{\jobname .xmpdata}
+    \Title{Neuroadaptive Technology: Concepts, Tools, and Validations}
+    \Author{Laurens R. Krol}
+    \Keywords{neuroadaptive technology\sep brain-computer interface\sep implicit interaction\sep cognitive probing\sep neuroethics}
+    \Language{English}
+    \URLlink{https://dx.doi.org/10.14279/depositonce-10656}
+\end{filecontents*}
+
+
+\begin{document}
+
+    \renewcommand{\contentsname}{Table of Contents}
+    \renewcommand{\bibname}{Bibliography}
+    
+    \pdfbookmark[chapter]{Title Page}{titlepage}
+    \input{titlepage}
+    \input{thorstenpage}
+    
+    \input{quote}
+    
+    \cleardoublepage
+    \pdfbookmark[chapter]{\contentsname}{toc}
+    \tableofcontents
+    
+    \input{summary}
+    \input{publications}
+    
+    \addtocontents{toc}{\bigskip}
+    
+    \input{donald}
+    \input{introduction}
+    
+    \part{Concepts}
+    \label{part:concepts}
+        \input{chapter-pbci}
+        \input{chapter-cp}
+        
+    \part{Tools}
+    \label{part:tools}
+        \input{chapter-sereega}
+        \input{chapter-visualisation}
+        
+    \part{Validations}
+    \label{part:validations}
+        \input{chapter-nat}
+        \input{chapter-salval}
+    
+    \bookmarksetup{startatroot}
+    \addtocontents{toc}{\bigskip}
+    
+    \input{discussion}
+    
+    \addtocontents{toc}{\bigskip}
+    
+    \cleardoublepage\phantomsection\label{bibliography}
+    \bibliography{bibliography}
+    
+    \listoffigures
+    \listoftables
+    
+    \input{supplement-nat}
+    \input{supplement-salval}
+
+\end{document}

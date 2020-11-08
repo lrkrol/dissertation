@@ -1,0 +1,39 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[ngerman]{babel}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\fancypagestyle{summaryde}{%
+    \renewcommand{\headrulewidth}{0pt}
+    \renewcommand{\headheight}{24pt}
+    \fancyhead[C]{\small\color{gray} Zusammenfassung der Dissertation \\ Krol, L.~R. (2020) \textit{Neuroadaptive Technology: Concepts, Tools, and Validations.}}
+    \fancyfoot[C]{\small\color{gray} Page~\thepage~of~\pageref{LastPage}}
+}
+\pagestyle{summaryde}
+
+
+\begin{document}
+
+\section*{Zusammenfassung}
+
+\begin{otherlanguage}{ngerman}
+In dieser Dissertation werden konzeptuelle, methodologische, und experimentelle Fortschritte auf dem Gebiet der neuroadaptiven Technologie vorgestellt. Neuroadaptive Technologie bezieht sich auf die Kategorie der Technologien, die impliziten Input aus der Hirnaktivität unter Verwendung einer passiven Hirn-Computer-Schnittstelle verwenden, um sich selbst anzupassen, z.B. um implizite Kontrolle oder implizite Interaktion zu ermöglichen. Impliziter Input bezeichnet jede Eingabe, die von einem Empfänger erhalten wird, jedoch von dem Sender nicht als solche beabsichtigt war. Die neuroadaptive Technologie erkennt also natürlich auftretende Hirnaktivität, die nicht für Kommunikation oder Kontrolle gedacht war, und nutzt sie, um neuartige Mensch-Computer-Interaktionsparadigmen zu ermöglichen. 
+
+Teil~I bietet einen konzeptuellen Rahmen, um frühere Arbeiten zu vereinheitlichen und zukünftige Forschung anzuleiten. Kapitel~1 gibt dazu einen Überblick über bestehende Anwendungen von passiven Hirn-Computer-Schnittstellen und schlägt vor, dass der Grad ihrer Interaktivität ein wichtiger Parameter mit den folgenden vier Stufen ist: erstens die Erkennung des mentalen Zustands des Menschen an sich, zweitens die Anpassung im offenen und drittens im geschlossenen Regelkreis, und viertens die automatisierte bzw. intelligente Anpassung. Systeme der letztgenannten Kategorie verfügen notwendigerweise über eine gewisse Autonomie, um die Interaktion entsprechend ihrer eigenen Ziele zu steuern. In Kapitel~2 wird erläutert, wie diese Autonomie für \emph{cognitive probing} (`kognitive Sondierung') genutzt werden kann: eine Methode, bei der die Technologie dem Benutzer absichtlich eine Gehirnreaktion entlockt, um aus dieser Reaktion etwas lernen zu können. Hierbei wird die Tatsache ausgenutzt, dass das menschliche Gehirn automatisch auf die von ihm wahrgenommenen Ereignisse reagiert. Die gelernten Informationen können zur weiteren Optimierung der Interaktion genutzt werden; sie können aber auch in für den Nutzer nachteiliger Weise eingesetzt werden. In Kapitel~2 werden daher eine Reihe von technologischen und ethischen Fragen in Zusammenhang mit dieser Methode diskutiert.
+
+Teil~II stellt zwei Werkzeuge vor, die bei der Validierung einiger Kernmethoden der neuroadaptiven Technologie helfen sollen. Kapitel~3 beschreibt SEREEGA (Simulating Event-Related EEG Activity), eine kostenlose und quelloffene Toolbox zur Simulation ereigniskorrelierter elektroenzephalographischer (EEG) Aktivität. Weil von simulierten Daten bekannt ist welche Prozesse ihnen zugrunde liegen, können sie zur Bewertung und Validierung von Analysemethoden verwendet werden. SEREEGA deckt die überwiegende Mehrheit der vergangenen und aktuellen EEG-Simulationsansätze ab und erweitert diese. Kapitel~4 verwendet daraufhin solche simulierten Daten, um eine Klassifikator-Visualisierungsmethode zu validieren. Diese Methode ermöglicht es, mehrere häufig verwendete Klassifikationsalgorithmen in einem virtuellen Gehirn zu visualisieren und zu erkennen, auf welche (kortikalen) Bereiche sich der Klassifikator konzentriert hat. Dies liefert wichtige Erkenntnisse, um sowohl den Klassifikator selbst als auch die neuroadaptive Technologie im weiteren Sinne zu validieren. Es bietet auch eine neue klassifikatorbasierte Analysemethode für die neurowissenschaftliche Forschung im Allgemeinen.
+
+In Teil~III werden zwei experimentelle Studien vorgestellt, die die in Teil~I beschriebene Technologie unter Verwendung der Methoden aus Teil~II veranschaulichen. Kapitel~5 zeigt, wie die neuroadaptive Technologie eingesetzt werden kann, um eine implizite Cursorsteuerung mittels \emph{cognitive probing} zu ermöglichen. Durch wiederholtes Auslösen von Gehirnreaktionen auf anfänglich zufällige Cursorbewegungen, und die Klassifizierung dieser Reaktionen als entweder positive oder negative Interpretationen der jeweiligen Bewegung, kann ein Computer den Cursor allmählich so steuern, dass er sich in die vom Beobachter gewünschte Richtung bewegt. Wichtig ist, dass sich der Beobachter dieses Vorgangs nicht bewusst sein muss. In Kapitel~6 werden zusätzliche Analysen dieses Paradigmas vorgestellt, die zeigen, dass die durch die Cursorbewegungen ausgelöste Hirnaktivität tatsächlich interne, subjektive Interpretationen widerspiegeln kann. Diese Experimente heben sowohl den potenziellen Nutzen als auch die potenziellen Risiken hervor, die in Teil~I angedeutet wurden.
+\end{otherlanguage}
+
+\vfill
+
+\begin{tabularx}{\textwidth}{XXX}
+& & \hrule Klaus Gramann \\
+\end{tabularx}
+
+\vspace{5cm}
+
+\end{document}
