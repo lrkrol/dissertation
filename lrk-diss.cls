@@ -16,16 +16,22 @@
 
 % setting font
 \usepackage{fontspec}
-\setmainfont [
-    Path = font/crimsonpro/, 
-    UprightFont = *-Regular,
-    BoldFont = *-SemiBold, 
-    ItalicFont = *-Italic,
-    BoldItalicFont = *-SemiBoldItalic]{CrimsonPro}
+\setmainfont[
+        Path = font/crimsonpro/, 
+        UprightFont = *-Regular,
+        BoldFont = *-SemiBold, 
+        ItalicFont = *-Italic,
+        BoldItalicFont = *-SemiBoldItalic]
+        {CrimsonPro}
 
 
 % page style
-\usepackage[left=1.25in,right=1.25in,top=1.2in,bottom=1.3in]{geometry}
+\usepackage[
+        left=1.25in,
+        right=1.25in,
+        top=1.2in,
+        bottom=1.3in]
+        {geometry}
 \usepackage[hang,flushmargin,perpage,symbol]{footmisc}
 \usepackage{emptypage}
 \sloppy
@@ -48,9 +54,22 @@
 \usepackage{xcolor}
 \usepackage[noindentafter]{titlesec}
 \usepackage{setspace}
-\titleformat{\chapter}[hang]{\setstretch{0.85}\Huge\bfseries\raggedright}{\parbox{2cm}{\hfill\thechapter \hspace{10pt}{\mdseries\textcolor[rgb]{.75, .75, .75}|}\hspace{10pt}\null}}{0pt}{}
-\titleformat{name=\chapter, numberless}[hang]{\setstretch{0.85}\Huge\bfseries\raggedright}{{\mdseries\textcolor[rgb]{.75, .75, .75}|}\hspace{10pt}\null}{0pt}{}
-\titlespacing{\chapter}{0pt}{0pt}{\baselineskip}
+\titleformat{\chapter}
+        [hang]
+        {\setstretch{0.85}\Huge\bfseries\raggedright}
+        {\parbox{2cm}{\hfill\thechapter \hspace{10pt}{\mdseries\textcolor[rgb]{.75, .75, .75}|}\hspace{10pt}\null}}
+        {0pt}
+        {}
+\titleformat{name=\chapter, numberless}
+        [hang]
+        {\setstretch{0.85}\Huge\bfseries\raggedright}
+        {{\mdseries\textcolor[rgb]{.75, .75, .75}|}\hspace{10pt}\null}
+        {0pt}
+        {}
+\titlespacing{\chapter}
+        {0pt}
+        {0pt}
+        {\baselineskip}
 
 
 % pdf options
