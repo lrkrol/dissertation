@@ -4,6 +4,8 @@ This is the repository containing the source files for my doctoral dissertation:
 
 - Krol, L. R. (2020). _Neuroadaptive technology: Concepts, tools, and validations_ (Doctoral thesis, Technische Universität Berlin, Berlin, Germany). doi: [10.14279/depositonce-10656](https://dx.doi.org/10.14279/depositonce-10656)
 
+[Direct PDF download](https://depositonce.tu-berlin.de/bitstream/11303/11768/4/krol_laurens.pdf)
+
 BibTeX:
 ```
 @phdthesis{krol2020neuroadaptivetechnology,
